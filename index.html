@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Mohamed Jakkiriya Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+
+
+
+<style>
+
+/*======================================
+//--//-->   ABOUT
+======================================*/
+
+.about-mf .box-shadow-full {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.about-mf .about-img {
+  margin-bottom: 2rem;
+}
+
+.about-mf .about-img img {
+  margin-left: 10px;
+}
+
+
+.skill-mf .progress {
+  /* background-color: #cde1f8; */
+  margin: .5rem 0 1.2rem 0;
+  border-radius: 0;
+  height: .7rem;
+}
+
+.skill-mf .progress .progress-bar {
+  height: .7rem;
+  background-color: #ffbd39;
+}
+
+
+/* Animation styles */
+#typing-animation {
+  position: relative;
+  font-size: 30px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 3s steps(20, end) infinite;
+}
+
+#typing-animation:before {
+  content: "";
+  /* position: absolute; */
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #ccc;
+  animation: typing-cursor 0.5s ease-in-out infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes typing-cursor {
+  from {
+    width: 5px;
+  }
+  to {
+    width: 0;
+  }
+}
+
+
+/* project image zoom effect */
+
+.zoom-effect {
+  overflow: hidden;
+  transition: transform 0.3s ease-out;
+}
+
+.zoom-effect:hover {
+  transform: scale(1.1);
+}
+
+
+</style>
+
+
+  </head>
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+	  
+	  
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+	    <div class="container">
+	      <a class="navbar-brand" href="index.html">Mohamed Jakkiriya </a>
+	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="oi oi-menu"></span> Menu
+	      </button>
+
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav nav ml-auto">
+	          <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
+	          <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
+	          <li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
+	          <li class="nav-item"><a href="#project-section" class="nav-link"><span>Projects</span></a></li>
+	          <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
+	        </ul>
+	      </div>
+	    </div>
+	  </nav>
+<section id="home-section" class="hero" style="background-image: url('images/blog_3.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat; position: relative; min-height: 100vh;">
+  <!-- Optional overlay -->
+  <div style="background-color: rgba(0, 0, 0, 0.5); position: absolute; inset: 0;"></div>
+
+  <div class="container" style="position: relative; z-index: 2;">
+    <div class="row  align-items-center " style="min-height: 100vh;">
+      <div class="col-md-8 ftco-animate text-white">
+        <div class="text">
+          <span class="subheading">Hello!</span>
+          <h1 class="mb-4 mt-3">I'm <span>Mohamed Jakkiriya</span></h1>
+
+          <!-- Typing animation -->
+          <span id="typing-animation"></span>
+
+          <script>
+            const typingAnimationElement = document.getElementById('typing-animation');
+            const typingTexts = ['Data Explorer'];
+
+            function playTypingAnimation(text) {
+              for (let i = 0; i < text.length; i++) {
+                setTimeout(() => {
+                  typingAnimationElement.textContent += text[i];
+                }, i * 200);
+              }
+
+              setTimeout(() => {
+                typingAnimationElement.textContent = '';
+                playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
+              }, text.length * 200);
+            }
+
+            playTypingAnimation(typingTexts[0]);
+          </script>
+
+          <br><br>
+          <h2>Aspiring Data Analyst</h2>
+          <p>
+            <a href="https://www.linkedin.com/in/mohamedjakkiriya/" class="btn btn-primary py-3 px-4">Discover Me</a>
+            <a href="https://github.com/mohamedJakkiriya47" class="btn btn-white btn-outline-white py-3 px-4">My Works</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+<section class="ftco-about ftco-section bg-dark text-white" id="about-section">
+  <div class="container">
+    <div class="row align-items-center justify-content-center">
+      <!-- Left: Profile Card -->
+      <div class="col-md-5 mb-5 mb-md-0">
+<div class="card text-white shadow p-4 border-0 rounded text-center h-100"
+     style="background: rgba(255, 255, 255, 0.1); backdrop-filter: blur(8px); border: 1px solid rgba(255, 255, 255, 0.2);">
+
+          <img src="images/business male.png" class="img-fluid rounded-circle mx-auto mb-3" alt="Mohamed Jakkiriya" style="width: 150px; height: 150px; object-fit: cover;">
+          <h4 class="mb-0">Mohamed Jakkiriya</h4>
+          <p class="text-light mb-2">Aspiring Data Analyst</p>
+          <hr class="bg-light">
+          <div class="text-left small">
+            <p><strong>Experience:</strong> 3 Years</p>
+            <p><strong>Location:</strong> Lawspet, Puducherry, India</p>
+            <h6 class="mt-3 text-primary">Skills & Expertise</h6>
+            <ul class="list-unstyled pl-3 mb-2">
+              <li><strong>Data Analysis:</strong> Cleaning, EDA, Descriptive & Diagnostic, Survey Design, Python (Pandas, NumPy, Seaborn)</li>
+              <li><strong>Tools:</strong> Excel (Adv + VBA), SQL (MySQL), Jupyter, PyCharm, Google Forms</li>
+              <li><strong>Visualization:</strong> Power BI (DAX), Excel Dashboards, Python Visuals, PowerPoint</li>
+              <li><strong>Other:</strong> Project Mgmt, Stakeholder Comms, Excel Training, Docs, Collaboration</li>
+            </ul>
+            <a href="https://www.linkedin.com/in/mohamedjakkiriya/" class="btn btn-primary btn-sm mt-2">LinkedIn</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right: About Description -->
+      <div class="col-md-7 pl-md-5">
+        <div class="heading-section mb-4">
+          <h1 class="big text-secondary">About</h1>
+          <h2 class="mb-3 text-white">Who I Am</h2>
+        </div>
+
+        <p class="mb-4 text-light">
+          I'm a detail-oriented Data Analyst and MIS Specialist with over 3 years of experience turning complex data into actionable insights.
+          I specialize in automating reports, building dashboards, and uncovering trends that enable smarter business decisions.
+          My toolset includes Python (Pandas, NumPy), SQL (MySQL), Excel VBA, and Power BI.
+          I'm passionate about solving real-world problems through data and aligning insights with strategic goals.
+          Recently, I led a data analytics internship project on Gen-Z career trends, blending technical analysis with business storytelling.
+        </p>
+
+        <ul class="list-unstyled about-info text-light">
+          <li><strong>Profile:</strong> Data Analytics</li>
+          <li><strong>Education:</strong> Bachelor of Commerce (B.Com)</li>
+          <li><strong>Languages:</strong> Tamil, English</li>
+          <li><strong>BI Tools:</strong> Microsoft Power BI, Tableau</li>
+          <li><strong>Other Skills:</strong> Excel, Python, Figma, SQL</li>
+          <li><strong>Interests:</strong> Travel, Cricket, Learning New Skills</li>
+        </ul>
+
+        <div class="counter-wrap mt-4">
+          <p class="mb-2 h5 text-primary"><strong class="number" data-number="2">1</strong>+ Projects Completed</p>
+          <a href="https://github.com/mohamedJakkiriya47" class="btn btn-primary py-2 px-4">GitHub</a>
+        </div>
+      </div>
+    </div>
+  </div>
+<
+
+
+
+
+
+
+	
+    <section class="ftco-section ftco-no-pb" id="resume-section">
+    	<div class="container">
+    		<div class="row justify-content-center pb-5">
+          <div class="col-md-10 heading-section text-center ftco-animate">
+          	<h1 class="big big-2">Resume</h1>
+            <h2 class="mb-4">Resume</h2>
+            <p>Data Analyst & MIS Specialist with 3+ years of experience in data analytics, reporting automation, and dashboard development. Proficient in Python, SQL, Excel VBA, and Power BI for transforming data into actionable insights. Led a data-driven project on Gen-Z career aspirations, leveraging survey analysis and visualization tools to deliver strategic recommendations. Skilled in stakeholder engagement and cross-functional collaboration to support data-informed decision-making.</p>
+          </div>
+        </div>
+
+		<div class="row">
+			<h1 class="big-4">Experience</h1>
+			<div class="underline"></div>
+		</div>
+		<br>
+		
+		<div class="row">
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">May 2021-Present</span>
+						<h2>  MIS Specialist</h2>
+						<span class="position">Lumina Datamatics</span>
+						<p class="mt-4">
+							<ul>
+								<li>Managed data from 13+ active projects, producing 20+ monthly KPI reports and building Excel dashboards, VBA macros, and utilization trackers—reducing reporting time by 30% and boosting operational efficiency.</li>
+								<li>Analyzed 2 years of timesheet data to create interactive dashboards revealing trends in leave, work hours, and bottlenecks, enabling better workforce planning and task allocation across teams.</li>
+								<li>Delivered advanced Excel training for new joiners, maintained SOPs for scalable onboarding, and collaborated with cross-functional teams to deliver customized BI dashboards and insights.</li>
+							</ul>
+						</p>
+					</div>
+
+				</div>
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">February 2025-June 2025</span>
+						<h2> Data Analyst Intern</h2>
+						<span class="position">Kulturehire</span>
+						<p class="mt-4 pb">
+							<ul>
+								<li>Designed and distributed targeted surveys to study Gen-Z career aspirations, meticulously collecting and cleaning large datasets in Excel, and performing comprehensive EDA using pivot tables and advanced SQL queries.</li>
+								<li>Built interactive Excel and Power BI dashboards with KPIs and gender-based slicers to highlight trends in salary expectations, industry preferences, and mission-driven goals.</li>
+								<li>Presented actionable insights and strategic recommendations through PowerPoint presentations, while documenting methodologies and findings for transparency and future use.</li>
+							</ul>
+						</p>
+					</div>
+
+				</div>
+<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">December 2021-May 2022</span>
+						<h2>E Commerce Executive</h2>
+						<span class="position">Lumina Datamatics</span>
+						<p class="mt-4">
+							<ul>
+								<li>Conducted detailed product categorization, mapping, and attribution to maintain accurate and standardized catalogs across various categories, ensuring consistency and enhancing product discoverability for customers.</li>
+								<li>Performed extensive web research to match and map products, while identifying the most cost-effective options based on customer requirements—helping drive customer satisfaction and marketplace competitiveness.</li>
+								<li>Supported top global e-commerce platforms across multiple regions (US, DE, FR, ES, IT, UK) by ensuring high data quality standards, validating product listings, and contributing to streamlined catalog operations through robust QA processes.</li>
+							</ul>
+						</p>
+					</div>
+
+				</div>
+				
+			</div>
+
+		<br>
+		<br>
+
+		<div class="row">
+			<h1 class="big-4">Education</h1>
+			<div class="underline"></div>
+		</div>
+		<br>
+		
+			<div class="row">
+    			<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date">2017-2020</span>
+    					<h2>Bachelor of Commerce</h2>
+    					<span class="position">Thiruvalluvar University</span>
+    					<p class="mt-4">Percentage : 70%</p>
+    				</div>
+    			</div>
+			</div>
+    		
+
+    		<div class="row justify-content-center mt-5">
+    			<div class="col-md-6 text-center ftco-animate">
+    				<p><a href="https://drive.google.com/file/d/1UNGaUFDIbmSbtDHvpRb5MIQIcDLNxK3s/view?usp=sharing" class="btn btn-primary py-4 px-5">Download CV</a></p>
+    			</div>
+    		</div>
+    	</div>
+    </section>
+
+   
+
+    <section class="ftco-section" id="project-section">
+      <div class="container">
+        <div class="row justify-content-center mb-5 pb-5">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Projects</h1>
+            <h2 class="mb-4">Projects</h2>
+            <p>Below are the sample Data Analytics projects on MS Excel,SQL, Python & Power BI </p>
+          </div>
+        </div>
+        <!-- <div class="row d-flex">
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <a href="https://github.com/meghakiran25/Pizza-Sales-Data-Analysis-Using-SQL"class="block-20 zoom-effect" style="background-image: url('images/pizza.PNG');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+                <h3 class="heading"><a href="https://github.com/meghakiran25/Pizza-Sales-Data-Analysis-Using-SQL">Pizza Sales Data Analysis using SQL</a></h3>
+					<p>Leveraged SQL for in-depth analysis of pizza sales data to understand sales trends, customer preferences, and operational efficiency to enhance business performance.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <a href="https://github.com/meghakiran25/Hotel-Reservation-Analysis-Using-Python" class="block-20 zoom-effect" style="background-image: url('images/Booking-A-Hotel-Room.jpg');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+                <h3 class="heading"><a href="https://github.com/meghakiran25/Hotel-Reservation-Analysis-Using-Python">
+					Hotel Reservation Data Analysis Using Python</a></h3><p>Used Python to perform exploratory data analysis on hotel reservation data, aiming to uncover insights that would help reduce cancellation rates and optimize strategies for revenue generation.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry">
+              <a href="https://github.com/meghakiran25/HR-Analytics-Dashboard-Using-Power-BI" class="block-20 zoom-effect" style="background-image: url('images/hr\ analytics.PNG');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+                <h3 class="heading"><a href="https://github.com/meghakiran25/HR-Analytics-Dashboard-Using-Power-BI"> HR Analytics Dashboard using Power BI</a></h3>
+                <p>Built an insightful Power BI dashboard to explore HR data, uncovering trends and factors related to employee attrition, and providing strategic recommendations for improving employee retention.</p>
+              </div>
+            </div> -->
+          </div>
+        </div>
+	<br>
+		<!-- added justify-content-center to center align the last two projects -->
+		<div class="row d-flex justify-content-center">  
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+				<a href="https://github.com/mohamedJakkiriya47/-GenZ-Career-Aspirations-Dashboard-using-Excel-SQL-Power-BI" class="block-20 zoom-effect" style="background-image: url('images/MANAGER_ASPIRATION.png');">
+				</a>
+				<div class="text mt-3 float-right d-block">
+  
+				  <h3 class="heading"><a href="https://github.com/mohamedJakkiriya47/-GenZ-Career-Aspirations-Dashboard-using-Excel-SQL-Power-BI">Genz Career Data Analysis Using Excel, SQL, Power BI</a></h3>
+				  <p> ULed a data-driven research project analyzing Gen-Z’s career goals and alignment with employer offerings. Utilized surveys, Excel, SQL, and Power BI to uncover insights on industry preferences, salary expectations, and mission-driven values—delivering clear, actionable strategies through interactive dashboards and executive presentations.</p>
+				</div>
+			  </div>
+			</div>
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+				<a href="https://github.com/mohamedJakkiriya47/-Ecommerce-sales-analysis-Dashboard-using-SQL-Power-BI" class="block-20 zoom-effect" style="background-image: url('images/SALES_ANALYSIS.png');">
+				</a>
+				<div class="text mt-3 float-right d-block">
+  
+				  <h3 class="heading"><a href="https://github.com/mohamedJakkiriya47/-Ecommerce-sales-analysis-Dashboard-using-SQL-Power-BI">Ecommerce Sales Analysis Using Excel, SQL, Power BI</a></h3>
+				  <p> Built a comprehensive Power BI dashboard to analyze sales, customer behavior, and product performance across regions and time. Identified key issues like low repeat purchases, seasonal sales dips, and inventory overload. Delivered actionable insights to improve retention, marketing efficiency, and stock management.</p>
+				</div>
+			  </div>
+			</div>
+		 </div>
+	  </div>
+    </section>
+
+
+
+	<section class="ftco-section ftco-no-pt ftco-no-pb ftco-counter img" id="section-counter">
+		<div class="container">
+		  <div class="row d-md-flex align-items-center">
+			<!-- <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+			  <div class="block-18">
+				<div class="text">
+				  
+				 
+				</div>
+			  </div>
+			</div> -->
+			
+			
+			
+		  </div>
+		</div>
+	  
+	
+	  <div class="ftco-section ftco-hireme img margin-top" style="background-image: url(images/bg_1.jpg)">
+			<!-- <div class="container"> -->
+				<div class="row justify-content-center">
+					<div class="col-md-7 ftco-animate text-center">
+						<h2>More projects on<span> Github  </span> </h2>
+						<div class="heading"> <h4> I love transforming data into strategic insights &amp;  and uncovering hidden data stories. </h4>
+						<br>
+						<p>
+							<a href="https://github.com/mohamedJakkiriya47" class="btn btn-primary py-3 px-5">GitHub</a>
+
+						</p>
+                          
+						</div>
+					</div>
+				</div>
+			<!-- </div> -->
+		</div>
+
+
+
+		
+	</section>
+
+
+
+
+
+	
+
+
+
+
+
+	
+
+
+    <section class="ftco-section contact-section ftco-no-pb" id="contact-section">
+      <div class="container">
+      	<div class="row justify-content-center mb-5 pb-3">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Contact</h1>
+            <h2 class="mb-4">Contact Me</h2>
+            <p>Below are the details to reach out to me!</p>
+          </div>
+        </div>
+
+        <div class="row d-flex contact-info mb-5">
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-map-signs"></span>
+          		</div>
+          		<h3 class="mb-4">Address</h3>
+	            <p>Lawspet,Puducherry,India</p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-phone2"></span>
+          		</div>
+          		<h3 class="mb-4">Contact Number</h3>
+	            <p>+ 91 75488 81246</p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-paper-plane"></span>
+          		</div>
+          		<h3 class="mb-4">Email Address</h3>
+	            <p><a href="mailto:info@yoursite.com">mohamedjakk44@gmail.com</a></p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-globe"></span>
+          		</div>
+          		<h3 class="mb-4">Download Resume</h3>
+	            <p><a href="https://drive.google.com/file/d/1UNGaUFDIbmSbtDHvpRb5MIQIcDLNxK3s/view?usp=sharing" download>My resume</a></p>
+	          </div>
+          </div>
+
+		
+   </div>
+ </section>
+
+
+ 
+	
+    <footer class="ftco-footer ftco-section">
+		<div class="container">
+		  <div class="row">
+			<div class="col-md-12 text-center">
+  
+			  <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+	Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart color-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+	<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+			</div>
+		  </div>
+		</div>
+	  </footer>
+
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  
+  <script src="js/main.js"></script>
+    
+  </body>
+</html>
